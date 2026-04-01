@@ -358,92 +358,58 @@ overflow:hidden;
 WARDROBE GRID
 =============================== */
 
-#shirt-grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
-
-gap:25px;
-
+/* Wardrobe Grid */
+.wardrobe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
 }
 
-/* PRODUCT CARD */
-
-.shirt-card{
-
-background:#111;
-
-border:1px solid var(--border);
-
-border-radius:14px;
-
-overflow:hidden;
-
-cursor:pointer;
-
-transition:0.3s;
-
+.clothing-card {
+    background-color: #111; /* luxury black */
+    border: 2px solid #ffd700; /* gold border */
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.shirt-card:hover{
-
-transform:translateY(-8px);
-
-border-color:var(--gold);
-
-box-shadow:0 10px 30px rgba(0,0,0,0.6);
-
+.clothing-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ffd700;
 }
 
-.shirt-preview{
-
-height:240px;
-
-background:#0f0f0f;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
+.clothing-card img {
+    width: 100%;
+    border-radius: 8px;
 }
 
-.shirt-preview img{
-
-width:100%;
-
-height:100%;
-
-object-fit:cover;
-
+.clothing-name {
+    color: #ffd700;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
-.shirt-info{
-
-padding:16px;
-
+.clothing-price {
+    color: #fff;
+    margin-bottom: 10px;
 }
 
-.shirt-name{
-
-font-size:14px;
-
-font-weight:600;
-
-margin-bottom:4px;
-
+.add-btn {
+    background-color: #ffd700;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
 }
 
-.shirt-price{
-
-font-size:14px;
-
-color:var(--gold);
-
+.add-btn:hover {
+    background-color: #e6c200;
 }
-
 /* ===============================
 STUDIO LAYOUT
 =============================== */
